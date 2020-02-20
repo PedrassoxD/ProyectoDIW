@@ -6,6 +6,14 @@
     width: 100%
 } */
 
+.bd {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 .barraNav {
     position: sticky;
     left: 0;
