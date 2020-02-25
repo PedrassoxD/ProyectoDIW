@@ -7,3 +7,8 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function mostrar() {
+    document.getElementById('contenedor').style.display = "none";
+    document.getElementById('contenedor').style.display = "block";
+}

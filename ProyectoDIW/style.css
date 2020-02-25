@@ -1,6 +1,8 @@
 /*  Añade un color de fondo negro a la navegación superior */
 
 .topnav {
+    width: 100%;
+    position: relative;
     background-color: #333;
     overflow: hidden;
 }
