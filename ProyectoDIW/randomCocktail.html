@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="prueba.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <title>Galería</title>
+    <title>Random Cocktail</title>
 </head>
 
 <body>
@@ -35,67 +35,39 @@
         <br>
         <br>
 
-        <section class="cards">
-            <div class="card">
-                <div class="card_content">
-                    <p class="card_title text--medium">
-                        Pulsa el boton para ver que beberás hoy!
-                    </p>
+        <div class="container">
+            <section class="cardsRandom" style="justify-content: center;">
+                <div class="card">
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            Pulsa el boton para ver que beberás hoy!
+                        </p>
+                    </div>
+                    <div class="card_text">
+                        <button class="boton_personalizado" type="button" onclick="mostrar()">A beber!</button>
+                    </div>
+                    <br><br>
                 </div>
-                <div class="card_text">
-                    <button class="boton_personalizado" type="button" onclick="mostrar()">A beber!</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <br>
 
-        <div id="contenedor" class="main" style="display: none;">
-            <ul id="app2" class="cards" style="text-align: center;">
-                <li class="cards_item" v-for="coctel of coctel">
-                    <div class="card">
-                        <div class="card_image"><img :src="coctel.strDrinkThumb"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">{{coctel.strDrink}}</h2>
-                            <p class="card_text">{{coctel.strInstructions}}</p>
-                            <small class="card_text">{{coctel.strAlcoholic}}</small>
+        <div id="contenedor" class="container" style="display: none;">
+            <ul id="app2" class="cardsRandom" style="justify-content: center;">
+                <li class="cards_itemRandom" v-for="coctel of coctel">
+                    <div class="cardRandom">
+                        <img :src="coctel.strDrinkThumb">
+                        <div class="card_contentRandom">
+                            <h2 class="card_titleRandom">{{coctel.strDrink}}</h2>
+                            <p class="card_textRandom">{{coctel.strInstructions}}</p>
+                            <small class="card_textRandom">{{coctel.strAlcoholic}}</small>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
 
-        <!-- <div class="container">
-            <hr style="opacity: 10%;">
-            <br>
-            <div style="text-align: center;">
-                <div class="cardCss">
-                    <p class="card_title text--medium" style="color: black;">
-                        Pulsa el botón para ver que vas a tomar hoy!
-                    </p>
-                    <button class="boton_personalizado" type="button" onclick="mostrar()">A beber!</button>
-                </div>
-            </div>
-            <br>
-            <hr style="opacity: 10%;">
-            <main id="contenedor" style="display: none;">
-                <section id="app2" class="cards">
-                    <div class="card" v-for="coctel of coctel">
-                        <div class="card__image-container">
-                            <img :src="coctel.strDrinkThumb" alt="">
-                        </div>
-                        <div class="card_content">
-                            <p class="card_title text--medium">
-                                {{coctel.strDrink}}
-                            </p>
-                            <p class="text--medium">{{coctel.strInstructions}}</p>
-                            <br>
-                            <p class="card_price text--medium">{{coctel.strAlcoholic}}</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div> -->
         <div style="height: 10rem;"></div>
 
         <footer class="footer-distributed" style="position: fixed;">

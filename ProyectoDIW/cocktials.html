@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <title>Galería</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery.scrollUp.js"></script>
+    <script>
+        $(function() {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+    <title>Cocktails With Alcohol</title>
 </head>
 
 <body>
@@ -41,7 +50,7 @@
             </div>
             <br>
             <hr style="opacity: 10%;">
-            <main>
+            <main class="main">
                 <section id="app" class="cards">
                     <div class="card" v-for="coctel of cocteles">
                         <div class="card__image-container">

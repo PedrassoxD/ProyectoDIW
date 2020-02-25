@@ -45,25 +45,6 @@ footer {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 360px) {
-    /* body {
-        background-attachment: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
-    /* .card {
-        padding: 16px;
-        width: 70%;
-        margin-left: 45px;
-        text-align: center;
-        background-color: #f1f1f1;
-    }
-    .card:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    } */
-}
-
 header {
     padding-top: 10%;
 }
@@ -110,7 +91,6 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #39393b;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
@@ -236,23 +216,6 @@ footer>div>a {
     margin-left: auto;
 }
 
-.ir-arriba {
-    display: none;
-    background-repeat: no-repeat;
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 2;
-}
-
-.parrafo {
-    font-size: 1rem;
-    font-family: Arial;
-}
-
 .video-responsive {
     height: 0;
     overflow: hidden;
@@ -276,16 +239,6 @@ footer>div>a {
     text-align: justify;
 }
 
-.cardCss {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 40%;
-}
-
-.cardCss:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 .boton_personalizado {
     text-decoration: none;
     padding: 10px;
@@ -300,4 +253,38 @@ footer>div>a {
 .boton_personalizado:hover {
     color: #1883ba;
     background-color: #ffffff;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url("irarriba.png");
+    background-size: cover;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.contentAbout {
+    font-family: Calibri;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-family: Calibri;
 }
