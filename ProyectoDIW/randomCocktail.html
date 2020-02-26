@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/prueba.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/cardRandomCocktail.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <title>Random Cocktail</title>
@@ -22,7 +22,9 @@
             <a href="cocktials-sin.html">Cocktails Alcohol-Free</a>
             <a href="randomCocktail.html">Random Cocktail</a>
             <a href="about.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
         <header style="color:black;">
@@ -35,7 +37,7 @@
         <br>
         <br>
 
-        <div class="container">
+        <div class="container" style="background-color: #ecf9ff;">
             <section class="cardsRandom" style="justify-content: center;">
                 <div class="card">
                     <div class="card_content">
@@ -53,7 +55,7 @@
 
         <br>
 
-        <div id="contenedor" class="container" style="display: none;">
+        <div id="contenedor" class="container" style="display: none; background-color: #ecf9ff;">
             <ul id="app2" class="cardsRandom" style="justify-content: center;">
                 <li class="cards_itemRandom" v-for="coctel of coctel">
                     <div class="cardRandom">

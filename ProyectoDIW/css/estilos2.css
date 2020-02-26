@@ -17,6 +17,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Calibri;
     font-size: 17px;
 }
 
@@ -39,7 +40,9 @@
 /* Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Home"). */
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child),
+    .topnav a:not(:first-child) {
+        display: none;
+    }
     .topnav a.icon {
         float: right;
         display: block;
