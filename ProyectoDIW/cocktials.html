@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Cocktails With Alcohol</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
     <script>
@@ -16,7 +17,6 @@
             });
         });
     </script>
-    <title>Cocktails With Alcohol</title>
 </head>
 
 <body>
@@ -35,26 +35,27 @@
         </nav>
 
         <header style="color:black;">
-            <h1>Cocktail Information</h1>
+            <h1 class="titulo">Cocktail Information</h1>
             <br>
-            <h4>Tu mejor página de información sobre Coktails.</h4>
+            <h4 class="subtitulo">Tu mejor página de información sobre Coktails.</h4>
         </header>
 
         <br>
         <br>
         <br>
 
-        <div class="container">
+        <div id="app" class="container" style="background-color: #ecf9ff;">
             <hr style="opacity: 10%;">
             <br>
             <div style="text-align: center;">
-                <h1>Cocktails With Alcohol</h1>
+                <h1 class="tituloCock">Cocktails With Alcohol</h1>
             </div>
             <br>
             <hr style="opacity: 10%;">
+            <input id="input-search" type="text" v-model="textSearch" placeholder='Cocktail name...'>
             <main class="main">
-                <section id="app" class="cards">
-                    <div class="card" v-for="coctel of cocteles">
+                <section class="cards" v-if="coctelesFilter && coctelesFilter.length">
+                    <div class="card" v-for="coctel of coctelesFilter">
                         <div class="card__image-container">
                             <img :src="coctel.strDrinkThumb" alt="">
                         </div>
@@ -79,8 +80,8 @@
             <div class="divContent">
                 <br>
                 <a href="https://www.github.com/PedrassoxD"><i class="fab fa-github fa-2x"></i></a>
-                <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                <a href=""><i class="fab fa-google-plus-g fa-2x"></i></a>
+                <a href="https://twitter.com/SniperPedrito?lang=es"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="mailto:pedroperlab@gmail.com?Subject=Hola%20buenas%20tardes%20que%20desea"><i class="fab fa-google-plus-g fa-2x"></i></a>
                 <br><br>
                 <span>© 2020 Copyright: <a>PedroPJPL.com</a> - Aviso legal, política de privacidad y de cookies</span>
             </div>
