@@ -1,0 +1,17 @@
+/* Botón para mostrar aleatoriamente un cocktail */
+
+.botonRandomCocktail {
+    text-decoration: none;
+    padding: $bpadding10;
+    font-weight: $bfontW;
+    font-size: $bfontS;
+    color: $bcolor;
+    background-color: $bBgColor;
+    border-radius: $bBorderR;
+    border: $bBorder;
+}
+
+.botonRandomCocktail:hover {
+    color: $bBgColor;
+    background-color: $bcolor;
+}
